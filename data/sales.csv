@@ -1,0 +1,11 @@
+sale_id,customer_name,product_name,promotion_name,units_sold,price,order_date
+1,Linda Montoya,Six,BOGO,7,171.71,2024-12-30
+2,Billy Morris,Boy,None,10,485.5,2025-06-23
+3,Justin Ray,Toward,BOGO,11,400.95,2025-08-23
+4,Matthew Ramirez,Fall,Clearance,4,404.94,2025-03-03
+5,Robert Green,Meet,BOGO,7,193.31,2024-12-01
+6,Sandra Bautista,Majority,BOGO,2,457.8,2025-11-15
+7,Christina Griffin,Character,Clearance,19,120.91,2025-06-20
+8,Tiffany Hernandez,Law,Clearance,19,381.93,2025-06-06
+9,Amanda Roman,People,None,17,51.48,2025-08-21
+10,Maria Townsend,Compare,BOGO,7,350.45,2025-08-17
