@@ -6,9 +6,11 @@ CREATE TABLE raw.first_sales_raw (
 	units_sold INT,
 	price NUMERIC,
 	order_date DATE
-)
+);
 
 
 
 COPY raw.first_sales_raw
-FROM 'C:\
+FROM 'C:\projects\data_warehouse_project\data\sales.csv'
+DELIMITER ','
+CSV HEADER;

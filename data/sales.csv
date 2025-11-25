@@ -1,11 +1,11 @@
 sale_id,customer_name,product_name,promotion_name,units_sold,price,order_date
-1,Linda Montoya,Six,BOGO,7,171.71,2024-12-30
-2,Billy Morris,Boy,None,10,485.5,2025-06-23
-3,Justin Ray,Toward,BOGO,11,400.95,2025-08-23
-4,Matthew Ramirez,Fall,Clearance,4,404.94,2025-03-03
-5,Robert Green,Meet,BOGO,7,193.31,2024-12-01
-6,Sandra Bautista,Majority,BOGO,2,457.8,2025-11-15
-7,Christina Griffin,Character,Clearance,19,120.91,2025-06-20
-8,Tiffany Hernandez,Law,Clearance,19,381.93,2025-06-06
-9,Amanda Roman,People,None,17,51.48,2025-08-21
-10,Maria Townsend,Compare,BOGO,7,350.45,2025-08-17
+1,Lisa Anderson,Speaker,None,9,188.23,2025-07-31
+2,Laura Howe,Laptop,Clearance,11,33.92,2025-08-18
+3,Kevin Myers,Headphones,Holiday Sale,16,133.43,2025-07-16
+4,Duane Taylor,Laptop,None,15,161.8,2024-12-29
+5,Dr. Susan White,Speaker,Clearance,20,293.86,2025-03-28
+6,Casey Smith,Speaker,None,15,332.39,2025-10-12
+7,Nicole Castillo,Headphones,Clearance,8,26.23,2024-12-08
+8,Gabriel Robinson,Camera,Holiday Sale,2,301.92,2024-12-10
+9,Renee Carrillo,Laptop,Clearance,17,199.2,2025-01-17
+10,Emily Bailey,Laptop,Flash Deal,2,300.46,2025-10-31
