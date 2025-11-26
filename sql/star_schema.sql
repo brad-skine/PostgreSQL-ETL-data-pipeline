@@ -9,7 +9,7 @@ CREATE TABLE warehouse.dim_product (
 	product_id SERIAL PRIMARY KEY,
 	name TEXT,
 	price NUMERIC,
-	category TEXT 
+	catagory TEXT 
 );
 
 CREATE TABLE warehouse.dim_date (
