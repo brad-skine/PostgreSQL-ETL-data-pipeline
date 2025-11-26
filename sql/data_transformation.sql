@@ -1,4 +1,4 @@
-DROP TABLE staging.sales_cleaned;
+DROP TABLE IF EXISTS staging.sales_cleaned;
 CREATE TABLE staging.sales_cleaned AS 
 SELECT 
 	sale_id,
