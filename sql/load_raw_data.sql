@@ -11,7 +11,6 @@ CREATE TABLE raw.sales_raw (
 );
 
 
-
 COPY raw.sales_raw
 FROM 'C:\projects\data_warehouse_project\data\sales.csv'
 DELIMITER ','

@@ -1,0 +1,3 @@
+SELECT etl.delete_sales_tables();
+SELECT etl.load_raw_sales();
+SELECT * FROM raw.sales_raw;
