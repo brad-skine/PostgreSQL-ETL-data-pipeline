@@ -38,8 +38,29 @@ SELECT DISTINCT  -- default values
 FROM staging.sales_cleaned
 WHERE promotion_name IS NOT NULL;
 
+
+
+
+INSERT INTO warehouse.fact_sales (customer_id, product_id, 
+promotion_id, date_id, units_sold, revenue)
+
+SELECT 
+
+c.customer_id,
+pr.product_id,
+pro.promotion_id,
+d.date_id,
+s.units_sold,
+s.total_revenue AS revenue
+
+FROM staging.sales_cleaned s
+JOIN warehouse.dim_customer c ON s.customer_name = c.name
+JOIN warehouse.dim_product pr ON s.product_name = pr.name
+--left join as many sales have may have no promotion.
+LEFT JOIN warehouse.dim_promotion pro ON s.promotion_name = pro.name
+JOIN warehouse.dim_date d ON s.order_date = d.order_date;
+
 	
 	
-	
-	
+
 	
