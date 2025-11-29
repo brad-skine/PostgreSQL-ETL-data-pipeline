@@ -1,6 +1,5 @@
 
-CREATE OR REPLACE FUNCTION etl.transform_sales(
-	)
+CREATE OR REPLACE FUNCTION etl.transform_sales()
     RETURNS void
     LANGUAGE 'sql'
     COST 100
@@ -14,6 +13,7 @@ CREATE TABLE staging.sales_cleaned AS
 SELECT 
 	sale_id,
 	INITCAP(customer_name) as customer_name,
+	INITCAP(city) as city,
 	INITCAP(product_name) as product_name,
 	promotion_name as promotion_name,
 	units_sold,
@@ -21,7 +21,7 @@ SELECT
 	order_date,
 	units_sold * price AS total_revenue
 FROM raw.sales_raw
-WHERE units_sold > 0 AND price > 0;
+WHERE units_sold > 0 AND price >= 0;
 
 
 $BODY$;

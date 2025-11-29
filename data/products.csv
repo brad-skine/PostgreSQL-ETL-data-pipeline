@@ -1,0 +1,11 @@
+product_id,product_name,catagory,brand,price,supplier
+1,Charger,Electronics,Anker,29.99,TechSupplier
+2,Camera,Electronics,Canon,499.99,PhotoWorld
+3,Backpack,Accessories,Nike,79.99,SportStore
+4,Watch,Wearables,Apple,399.99,AppleStore
+5,Laptop,Computers,Dell,899.99,DellSupplier
+6,Headphones,Electronics,Sony,149.99,MusicTech
+7,Smartphone,Electronics,Samsung,699.99,PhoneWorld
+8,Tablet,Computers,Apple,499.99,AppleStore
+9,Mouse,Computers,Logitech,49.99,TechSupplier
+10,Keyboard,Computers,Logitech,69.99,TechSupplier

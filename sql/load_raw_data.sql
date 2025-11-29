@@ -12,6 +12,7 @@ DROP TABLE IF EXISTS raw.sales_raw;
 CREATE TABLE raw.sales_raw (
 	sale_id INT,
 	customer_name TEXT,
+	city TEXT,
 	product_name TEXT,
 	promotion_name TEXT,
 	units_sold INT,

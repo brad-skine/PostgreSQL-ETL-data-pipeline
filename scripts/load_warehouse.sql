@@ -9,7 +9,7 @@ AS $BODY$
 INSERT INTO warehouse.dim_customer (name, city, zip)
 SELECT DISTINCT 
 	customer_name as name,
-	NULL AS city,
+	city AS city,
 	NULL::INT AS zip
 FROM staging.sales_cleaned;
 

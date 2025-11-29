@@ -25,11 +25,19 @@ SELECT DISTINCT
 FROM staging.sales_cleaned
 WHERE order_date IS NOT NULL;
 
-INSERT INTO warehouse.dim_product (name, catagory)
+
+
+INSERT INTO warehouse.dim_product (name, catagory, brand, retail_price, with_gst_price, supplier)
 SELECT DISTINCT 
-	product_name AS name,
-	NULL as catagory
-FROM staging.sales_cleaned;
+	p.product_name AS name,
+	p.catagory,
+	p.brand,
+	p.retail_price,
+	p.with_gst_price,
+	p.supplier
+FROM staging.sales_cleaned s
+JOIN staging.products_cleaned p ON s.product_name = p.product_name;
+
 
 INSERT INTO warehouse.dim_promotion (name,ad_type,coupon_type,
 	discount,start_date, end_date, active, updatetime)
@@ -45,9 +53,11 @@ SELECT DISTINCT  -- default values
 FROM staging.sales_cleaned
 WHERE promotion_name IS NOT NULL;
 
+
+
+
 INSERT INTO warehouse.fact_sales (customer_id, product_id, 
 promotion_id, date_id, units_sold, revenue)
-
 SELECT 
 
 c.customer_id,

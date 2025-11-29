@@ -1,11 +1,11 @@
-sale_id,customer_name,product_name,promotion_name,units_sold,price,order_date
-1,Andre King,Backpack,Clearance,9,108.7,2025-06-11
-2,Janet Cortez,Backpack,BOGO,20,198.48,2025-11-15
-3,Timothy Brown,Charger,None,8,361.15,2025-11-12
-4,Nathan Smith,Backpack,Flash Deal,7,108.37,2025-06-16
-5,Hannah Mendoza,Backpack,BOGO,14,461.39,2025-09-09
-6,Sharon Smith,Laptop,Flash Deal,5,198.77,2025-09-20
-7,Caroline Anthony,Backpack,None,5,128.49,2025-11-14
-8,Ethan Howell,Backpack,BOGO,17,172.32,2025-02-01
-9,Mark Golden,Speaker,Holiday Sale,11,298.57,2025-08-27
-10,Troy Doyle,Watch,Clearance,4,156.22,2025-03-17
+sale_id,customer_name,city,product_name,promotion_name,units_sold,price,order_date
+1,Margaret Snyder,Invercargill,Headphones,None,20,183.07,2024-12-13
+2,Tamara Lopez,Dunedin,Smartphone,Holiday Sale,9,316.4,2025-02-14
+3,Randall Ford,Wellington,Watch,BOGO,12,481.52,2025-09-14
+4,Kyle Peck,Wellington,Charger,Clearance,1,20.42,2025-01-06
+5,Darren Hill,Invercargill,Backpack,Flash Deal,10,487.86,2025-02-26
+6,David Lewis,Dunedin,Backpack,None,16,153.17,2025-08-19
+7,Katelyn Schmidt,Dunedin,Charger,Holiday Sale,1,478.43,2024-12-17
+8,Ronald Johnson,Dunedin,Watch,Clearance,9,227.83,2024-12-24
+9,Karen Lopez DDS,Christchurch,Mouse,Holiday Sale,4,144.77,2025-01-20
+10,Anthony Turner,Christchurch,Watch,None,18,403.16,2025-11-04
