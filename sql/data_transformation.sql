@@ -1,3 +1,14 @@
+
+CREATE OR REPLACE FUNCTION etl.transform_sales(
+	)
+    RETURNS void
+    LANGUAGE 'sql'
+    COST 100
+    VOLATILE PARALLEL UNSAFE
+AS $BODY$
+
+
+
 DROP TABLE IF EXISTS staging.sales_cleaned;
 CREATE TABLE staging.sales_cleaned AS 
 SELECT 
@@ -11,4 +22,11 @@ SELECT
 	units_sold * price AS total_revenue
 FROM raw.sales_raw
 WHERE units_sold > 0 AND price > 0;
+
+
+$BODY$;
+ALTER FUNCTION etl.transform_sales()
+    OWNER TO postgres;
+
+
 	

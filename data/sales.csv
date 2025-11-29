@@ -1,11 +1,11 @@
 sale_id,customer_name,product_name,promotion_name,units_sold,price,order_date
-1,Lisa Anderson,Speaker,None,9,188.23,2025-07-31
-2,Laura Howe,Laptop,Clearance,11,33.92,2025-08-18
-3,Kevin Myers,Headphones,Holiday Sale,16,133.43,2025-07-16
-4,Duane Taylor,Laptop,None,15,161.8,2024-12-29
-5,Dr. Susan White,Speaker,Clearance,20,293.86,2025-03-28
-6,Casey Smith,Speaker,None,15,332.39,2025-10-12
-7,Nicole Castillo,Headphones,Clearance,8,26.23,2024-12-08
-8,Gabriel Robinson,Camera,Holiday Sale,2,301.92,2024-12-10
-9,Renee Carrillo,Laptop,Clearance,17,199.2,2025-01-17
-10,Emily Bailey,Laptop,Flash Deal,2,300.46,2025-10-31
+1,Andre King,Backpack,Clearance,9,108.7,2025-06-11
+2,Janet Cortez,Backpack,BOGO,20,198.48,2025-11-15
+3,Timothy Brown,Charger,None,8,361.15,2025-11-12
+4,Nathan Smith,Backpack,Flash Deal,7,108.37,2025-06-16
+5,Hannah Mendoza,Backpack,BOGO,14,461.39,2025-09-09
+6,Sharon Smith,Laptop,Flash Deal,5,198.77,2025-09-20
+7,Caroline Anthony,Backpack,None,5,128.49,2025-11-14
+8,Ethan Howell,Backpack,BOGO,17,172.32,2025-02-01
+9,Mark Golden,Speaker,Holiday Sale,11,298.57,2025-08-27
+10,Troy Doyle,Watch,Clearance,4,156.22,2025-03-17

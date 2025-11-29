@@ -1,3 +1,7 @@
+-- FUNCTION: etl.load_warehouse()
+
+-- DROP FUNCTION IF EXISTS etl.load_warehouse();
+
 CREATE OR REPLACE FUNCTION etl.load_warehouse(
 	)
     RETURNS void
@@ -5,7 +9,6 @@ CREATE OR REPLACE FUNCTION etl.load_warehouse(
     COST 100
     VOLATILE PARALLEL UNSAFE
 AS $BODY$
-
 INSERT INTO warehouse.dim_customer (name, city, zip)
 SELECT DISTINCT 
 	customer_name as name,
