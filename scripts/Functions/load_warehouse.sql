@@ -14,7 +14,8 @@ SELECT DISTINCT
 	customer_name as name,
 	NULL AS city,
 	NULL::INT AS zip
-FROM staging.sales_cleaned;
+FROM staging.sales_cleaned
+ON CONFLICT (name) DO NOTHING;
 
 INSERT INTO warehouse.dim_date (order_date, year, month, day)
 SELECT DISTINCT 
@@ -24,7 +25,7 @@ SELECT DISTINCT
 	EXTRACT(year FROM order_date) as year
 FROM staging.sales_cleaned
 WHERE order_date IS NOT NULL;
-
+ON CONFLICT (order_date) DO NOTHING;
 
 
 INSERT INTO warehouse.dim_product (name, catagory, brand, retail_price, with_gst_price, supplier)
@@ -37,7 +38,7 @@ SELECT DISTINCT
 	p.supplier
 FROM staging.sales_cleaned s
 JOIN staging.products_cleaned p ON s.product_name = p.product_name;
-
+ON CONFLICT (name) DO NOTHING;
 
 INSERT INTO warehouse.dim_promotion (name,ad_type,coupon_type,
 	discount,start_date, end_date, active, updatetime)
@@ -52,7 +53,7 @@ SELECT DISTINCT  -- default values
     CURRENT_TIMESTAMP AS updatetime
 FROM staging.sales_cleaned
 WHERE promotion_name IS NOT NULL;
-
+ON CONFLICT (promotion_name) DO NOTHING;
 
 
 
