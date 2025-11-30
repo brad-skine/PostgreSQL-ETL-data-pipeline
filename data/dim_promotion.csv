@@ -1,0 +1,6 @@
+promotion_id,name,ad_type,coupon_type,discount,start_date,end_date,active,updatetime
+1,Flash Deal,Unknown,None,0.0000,2025-11-30,2028-11-30,t,2025-11-30 22:26:35.732819
+2,None,Unknown,None,0.0000,2025-11-30,2028-11-30,t,2025-11-30 22:26:35.732819
+3,BOGO,Unknown,None,0.0000,2025-11-30,2028-11-30,t,2025-11-30 22:26:35.732819
+4,Clearance,Unknown,None,0.0000,2025-11-30,2028-11-30,t,2025-11-30 22:26:35.732819
+5,Holiday Sale,Unknown,None,0.0000,2025-11-30,2028-11-30,t,2025-11-30 22:26:35.732819

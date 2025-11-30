@@ -7,7 +7,7 @@ CREATE TABLE warehouse.dim_customer (
 
 CREATE TABLE warehouse.dim_product (
 	product_id SERIAL PRIMARY KEY,
-	name TEXT,
+	name TEXT,  -- unque here would have been approach
 	price NUMERIC,
 	catagory TEXT 
 );
@@ -43,4 +43,18 @@ CREATE TABLE warehouse.fact_sales (
 	units_sold NUMERIC,
 	revenue NUMERIC
 );
-	
+
+
+
+ALTER TABLE warehouse.dim_customer  -- relaized later taht these needed Unique
+									-- to prevent duplicates 
+ADD CONSTRAINT dim_customer_name_uniq UNIQUE (name);
+
+ALTER TABLE warehouse.dim_product 
+ADD CONSTRAINT dim_product_name_uniq UNIQUE (name);
+
+ALTER TABLE warehouse.dim_promotion 
+ADD CONSTRAINT dim_promotion_name_uniq UNIQUE (name);
+
+ALTER TABLE warehouse.dim_date 
+ADD CONSTRAINT dim_date_orderdate_uniq UNIQUE (order_date);

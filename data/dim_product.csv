@@ -1,0 +1,7 @@
+product_id,name,catagory,brand,retail_price,with_gst_price,supplier
+1,Smartphone,Electronics,Samsung,699.99,804.9885,Phoneworld
+2,Charger,Electronics,Anker,29.99,34.4885,Techsupplier
+3,Backpack,Accessories,Nike,79.99,91.9885,Sportstore
+4,Mouse,Computers,Logitech,49.99,57.4885,Techsupplier
+5,Watch,Wearables,Apple,399.99,459.9885,Applestore
+6,Headphones,Electronics,Sony,149.99,172.4885,Musictech
